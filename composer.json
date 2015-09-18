@@ -4,9 +4,12 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*"
+        "aimeos/aimeos-laravel": "dev-master",
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -34,6 +37,9 @@
         ],
         "pre-update-cmd": [
             "php artisan clear-compiled"
+            "php artisan vendor:publish --tag=public --force",
+            "php artisan vendor:publish",
+            "php artisan migrate",
         ],
         "post-update-cmd": [
             "php artisan optimize"
