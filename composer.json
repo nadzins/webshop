@@ -36,10 +36,10 @@
             "php artisan optimize"
         ],
         "pre-update-cmd": [
-            "php artisan clear-compiled"
+            "php artisan clear-compiled",
             "php artisan vendor:publish --tag=public --force",
             "php artisan vendor:publish",
-            "php artisan migrate",
+            "php artisan migrate"
         ],
         "post-update-cmd": [
             "php artisan optimize"
