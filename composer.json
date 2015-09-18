@@ -8,7 +8,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*"
+        "laravel/framework": "5.1.*",
         "aimeos/aimeos-laravel": "dev-master",
     },
     "require-dev": {
